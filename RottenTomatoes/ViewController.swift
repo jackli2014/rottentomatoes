@@ -89,7 +89,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
       //  cell.textLabel?.text = NSString(format: "section %ld, row %ld, title %s ", indexPath.section, indexPath.row)
         
         cell.titleLabel?.text = json[indexPath.row]["title"].string
-        cell.synopsisLabel?.text = json[indexPath.row]["synopsis"].string
+        cell.synopsisText?.text = json[indexPath.row]["synopsis"].string
         //cell.textLabel?.text = json[indexPath.row]["title"].string
         return cell
     }
