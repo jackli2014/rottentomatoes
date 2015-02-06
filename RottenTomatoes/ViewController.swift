@@ -57,8 +57,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         
         
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,22 +73,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         
         var cell = tableView.dequeueReusableCellWithIdentifier("movieCell") as MovieViewCell
         
-        //var cell = UITableViewCell()
         println(indexPath.row)
         let json = JSON(moviesData["movies"]!)
-        // println(json)
+        
         println(json[indexPath.row] )
-        //println (movies[indexPath.row])
-        
-        
-        // println (movies[indexPath.row])
-
-        
-      //  cell.textLabel?.text = NSString(format: "section %ld, row %ld, title %s ", indexPath.section, indexPath.row)
         
         cell.titleLabel?.text = json[indexPath.row]["title"].string
         cell.synopsisText?.text = json[indexPath.row]["synopsis"].string
-        //cell.textLabel?.text = json[indexPath.row]["title"].string
+       
+        
+        var url = NSURL(string:json[indexPath.row]["posters"]["thumbnail"].string! as String)
+        println (url)
+        
+    
+        
+        cell.movieImg?.setImageWithURL(url!)
+        
         return cell
     }
     
