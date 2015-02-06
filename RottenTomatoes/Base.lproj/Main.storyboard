@@ -17,7 +17,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="143" id="D1H-fX-Jb9" customClass="MovieViewCell" customModule="RottenTomatoes" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="movieCell" rowHeight="143" id="D1H-fX-Jb9" customClass="MovieViewCell" customModule="RottenTomatoes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="D1H-fX-Jb9" id="8sI-XY-vCL">
@@ -48,6 +48,7 @@
                                             <outlet property="movieImg" destination="ucy-vr-dQr" id="8Pb-Uu-BHA"/>
                                             <outlet property="synopsisText" destination="rXg-0H-Eob" id="jce-uw-FVE"/>
                                             <outlet property="titleLabel" destination="g0p-T3-jbe" id="3n5-nX-va0"/>
+                                            <segue destination="fD9-Lf-th8" kind="push" id="FQG-Ng-rfH"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -85,6 +86,7 @@
                             <outlet property="delegate" destination="fD9-Lf-th8" id="h1b-WM-Ck3"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="a7H-PK-F2Z"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wle-b2-Yzv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
