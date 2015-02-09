@@ -137,7 +137,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="WUs-tr-ls6">
-                                <rect key="frame" x="0.0" y="270" width="314" height="289"/>
+                                <rect key="frame" x="8" y="270" width="306" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="d5X-Rs-aL1">
@@ -152,6 +152,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="zTH-PF-boT"/>
                     <connections>
+                        <outlet property="MovieImg" destination="WUs-tr-ls6" id="gY7-fx-TKl"/>
                         <outlet property="audienceScoreLabel" destination="d5X-Rs-aL1" id="N8K-Wc-rig"/>
                         <outlet property="criticsScoreLabel" destination="QOf-cE-WjQ" id="Y2M-ev-eWB"/>
                         <outlet property="ratingLabel" destination="5l0-Ps-Kql" id="Dms-94-VkO"/>

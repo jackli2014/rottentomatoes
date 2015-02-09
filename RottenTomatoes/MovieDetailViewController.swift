@@ -18,6 +18,7 @@ class MovieDetailViewController: UIViewController {
     @IBOutlet weak var criticsScoreLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var yearLabel: UILabel!
+    @IBOutlet weak var MovieImg: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,10 +30,11 @@ class MovieDetailViewController: UIViewController {
         audienceScoreLabel.text = "\(movieObject!.audienceScore)"
 
         ratingLabel.text =  movieObject!.mpaaRating
+        
+        var url = movieObject!.posterURL
+        MovieImg.setImageWithURL(url)
 
         
-        
-
     }
 
     override func didReceiveMemoryWarning() {
