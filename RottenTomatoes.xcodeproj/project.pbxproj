@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		533304021A843F5B00859BCA /* MovieViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533304011A843F5B00859BCA /* MovieViewCell.swift */; };
 		536E12781A84385200785E0F /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E12771A84385200785E0F /* SwiftyJSON.swift */; };
+		538612B01A8843E8004DC42E /* MovieObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538612AF1A8843E8004DC42E /* MovieObject.swift */; };
+		538612B41A884EA1004DC42E /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 538612B31A884EA1004DC42E /* MovieDetailViewController.swift */; };
 		53B184A51A82D41700A4D667 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B184A41A82D41700A4D667 /* AppDelegate.swift */; };
 		53B184A71A82D41700A4D667 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B184A61A82D41700A4D667 /* ViewController.swift */; };
 		53B184AA1A82D41700A4D667 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B184A81A82D41700A4D667 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		46E66E53C8422FAB12A9A42E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		533304011A843F5B00859BCA /* MovieViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewCell.swift; sourceTree = "<group>"; };
 		536E12771A84385200785E0F /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		538612AF1A8843E8004DC42E /* MovieObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieObject.swift; sourceTree = "<group>"; };
+		538612B31A884EA1004DC42E /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		53B1849F1A82D41700A4D667 /* RottenTomatoes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenTomatoes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53B184A31A82D41700A4D667 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		53B184A41A82D41700A4D667 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 				533304011A843F5B00859BCA /* MovieViewCell.swift */,
 				53B3D0E71A844875005085A5 /* anyfile.m */,
 				53B3D0E61A844875005085A5 /* RottenTomatoes-Bridging-Header.h */,
+				538612AF1A8843E8004DC42E /* MovieObject.swift */,
+				538612B31A884EA1004DC42E /* MovieDetailViewController.swift */,
 			);
 			path = RottenTomatoes;
 			sourceTree = "<group>";
@@ -286,7 +292,9 @@
 				533304021A843F5B00859BCA /* MovieViewCell.swift in Sources */,
 				53B3D0E81A844875005085A5 /* anyfile.m in Sources */,
 				53B184A71A82D41700A4D667 /* ViewController.swift in Sources */,
+				538612B41A884EA1004DC42E /* MovieDetailViewController.swift in Sources */,
 				53B184A51A82D41700A4D667 /* AppDelegate.swift in Sources */,
+				538612B01A8843E8004DC42E /* MovieObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

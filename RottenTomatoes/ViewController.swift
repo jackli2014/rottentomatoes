@@ -92,6 +92,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
     }
     
+    
+    // MARK: - Navigation
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+        
+        var vc = segue.destinationViewController as MovieDetailViewController
+       
+        let indexPath = tableView.indexPathForSelectedRow()!
+        
+         vc.movieObject = MovieObject(dictionary: movies[indexPath.row] as NSDictionary)
+
+        
+        
+    }
+    
+
+    
    
 
 
